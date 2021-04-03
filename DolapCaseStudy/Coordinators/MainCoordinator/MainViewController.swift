@@ -9,10 +9,6 @@ import UIKit
 
 class MainViewController: BaseViewController<MainViewModel> {
 
-    override var viewTitle: String? {
-        return MainViewLocalizables.viewTitle.value
-    }
-    
     private var itemCollectionComponent: ItemCollectionComponent!
     private var dimmingView: DimmingView!
     
