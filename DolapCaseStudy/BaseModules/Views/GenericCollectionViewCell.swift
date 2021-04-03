@@ -35,13 +35,4 @@ class GenericCollectionViewCell<DataType, ViewType: GenericBaseView<DataType>>: 
         genericView.setData(data: data)
     }
     
-//    func subscribeToSelectedRow(completion: @escaping GenericComponentDataProtocolCompletion) {
-//        genericView.startPressedAnimationCommon { [weak self](finish) in
-//            if finish {
-//                guard let data = self?.genericView.returnData() as? GenericComponentDataProtocol else { return }
-//                completion(data)
-//            }
-//        }
-//    }
-    
 }

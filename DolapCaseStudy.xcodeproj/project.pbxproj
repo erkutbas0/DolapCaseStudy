@@ -111,6 +111,13 @@
 		A7AB31CB2618CF6300F7C6A8 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB31CA2618CF6300F7C6A8 /* AppViewModel.swift */; };
 		A7AB31D02618D04900F7C6A8 /* SplashCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB31CF2618D04900F7C6A8 /* SplashCoordinatorAssembly.swift */; };
 		A7AB31DB2618D40C00F7C6A8 /* AppCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB31DA2618D40C00F7C6A8 /* AppCoordinatorAssembly.swift */; };
+		A7AB31E42618E45700F7C6A8 /* MainCollectionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB31E32618E45700F7C6A8 /* MainCollectionComponent.swift */; };
+		A7AB31E92618E47700F7C6A8 /* MainCollectionComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB31E82618E47700F7C6A8 /* MainCollectionComponentData.swift */; };
+		A7AB31F02618E54E00F7C6A8 /* CollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB31EF2618E54E00F7C6A8 /* CollectionView+Extensions.swift */; };
+		A7AB31F52618E58600F7C6A8 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB31F42618E58600F7C6A8 /* TestCell.swift */; };
+		A7AB31FA2618E7A300F7C6A8 /* MainCollectionComponentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB31F92618E7A300F7C6A8 /* MainCollectionComponentHeaderView.swift */; };
+		A7AB31FF2618E95B00F7C6A8 /* BaseCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB31FE2618E95B00F7C6A8 /* BaseCollectionHeaderView.swift */; };
+		A7AB32042618F09300F7C6A8 /* MainComponentHeaderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB32032618F09300F7C6A8 /* MainComponentHeaderLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -238,6 +245,13 @@
 		A7AB31CA2618CF6300F7C6A8 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		A7AB31CF2618D04900F7C6A8 /* SplashCoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinatorAssembly.swift; sourceTree = "<group>"; };
 		A7AB31DA2618D40C00F7C6A8 /* AppCoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorAssembly.swift; sourceTree = "<group>"; };
+		A7AB31E32618E45700F7C6A8 /* MainCollectionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionComponent.swift; sourceTree = "<group>"; };
+		A7AB31E82618E47700F7C6A8 /* MainCollectionComponentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionComponentData.swift; sourceTree = "<group>"; };
+		A7AB31EF2618E54E00F7C6A8 /* CollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		A7AB31F42618E58600F7C6A8 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
+		A7AB31F92618E7A300F7C6A8 /* MainCollectionComponentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionComponentHeaderView.swift; sourceTree = "<group>"; };
+		A7AB31FE2618E95B00F7C6A8 /* BaseCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionHeaderView.swift; sourceTree = "<group>"; };
+		A7AB32032618F09300F7C6A8 /* MainComponentHeaderLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainComponentHeaderLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +305,7 @@
 		A7AB300A2618B3F000F7C6A8 /* DolapCaseStudy */ = {
 			isa = PBXGroup;
 			children = (
+				A7AB31ED2618E53E00F7C6A8 /* SupportingFiles */,
 				A7AB316B2618BF3000F7C6A8 /* Managers */,
 				A7AB31202618BE6A00F7C6A8 /* CustomViews */,
 				A7AB30B32618BB7600F7C6A8 /* Utilities */,
@@ -370,6 +385,7 @@
 				A7AB30632618BB5E00F7C6A8 /* GenericBaseView.swift */,
 				A7AB30642618BB5E00F7C6A8 /* GenericTableViewCell.swift */,
 				A7AB30652618BB5E00F7C6A8 /* BaseView.swift */,
+				A7AB31FE2618E95B00F7C6A8 /* BaseCollectionHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -550,6 +566,7 @@
 		A7AB31202618BE6A00F7C6A8 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				A7AB31E22618E44400F7C6A8 /* MainCollectionComponent */,
 				A7AB31212618BE6A00F7C6A8 /* CollectionCells */,
 				A7AB31242618BE6A00F7C6A8 /* TitleInfoViewComponent */,
 				A7AB312A2618BE6A00F7C6A8 /* ItemCollectionComponent */,
@@ -675,6 +692,34 @@
 				A7AB31802618BF3000F7C6A8 /* ImageCacheManager.swift */,
 			);
 			path = ImageOperationManagers;
+			sourceTree = "<group>";
+		};
+		A7AB31E22618E44400F7C6A8 /* MainCollectionComponent */ = {
+			isa = PBXGroup;
+			children = (
+				A7AB31E32618E45700F7C6A8 /* MainCollectionComponent.swift */,
+				A7AB31E82618E47700F7C6A8 /* MainCollectionComponentData.swift */,
+				A7AB31F42618E58600F7C6A8 /* TestCell.swift */,
+				A7AB31F92618E7A300F7C6A8 /* MainCollectionComponentHeaderView.swift */,
+				A7AB32032618F09300F7C6A8 /* MainComponentHeaderLayout.swift */,
+			);
+			path = MainCollectionComponent;
+			sourceTree = "<group>";
+		};
+		A7AB31ED2618E53E00F7C6A8 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A7AB31EE2618E54300F7C6A8 /* Extensions */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		A7AB31EE2618E54300F7C6A8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7AB31EF2618E54E00F7C6A8 /* CollectionView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -854,6 +899,8 @@
 				A7AB307E2618BB5E00F7C6A8 /* CoordinatorDelegate.swift in Sources */,
 				A7AB306F2618BB5E00F7C6A8 /* ErrorResult.swift in Sources */,
 				A7AB307B2618BB5E00F7C6A8 /* ApplicationStoryBoards.swift in Sources */,
+				A7AB31F52618E58600F7C6A8 /* TestCell.swift in Sources */,
+				A7AB31FA2618E7A300F7C6A8 /* MainCollectionComponentHeaderView.swift in Sources */,
 				A7AB31D02618D04900F7C6A8 /* SplashCoordinatorAssembly.swift in Sources */,
 				A7AB315A2618BE6A00F7C6A8 /* AlertButton.swift in Sources */,
 				A7AB300C2618B3F000F7C6A8 /* AppDelegate.swift in Sources */,
@@ -863,8 +910,11 @@
 				A7AB31512618BE6A00F7C6A8 /* CustomImageViewComponentData.swift in Sources */,
 				A7AB30EF2618BB7600F7C6A8 /* String+Extension.swift in Sources */,
 				A7AB31102618BB7600F7C6A8 /* ViewControllerUtilities.swift in Sources */,
+				A7AB31F02618E54E00F7C6A8 /* CollectionView+Extensions.swift in Sources */,
 				A7AB30A72618BB6A00F7C6A8 /* SplashScreenCoordinator.swift in Sources */,
+				A7AB31FF2618E95B00F7C6A8 /* BaseCollectionHeaderView.swift in Sources */,
 				A7AB30AA2618BB6A00F7C6A8 /* SplashScreenViewController.swift in Sources */,
+				A7AB31E92618E47700F7C6A8 /* MainCollectionComponentData.swift in Sources */,
 				A7AB30772618BB5E00F7C6A8 /* GenericTableViewCell.swift in Sources */,
 				A7AB315B2618BE6A00F7C6A8 /* AlertButtonData.swift in Sources */,
 				A7AB31BE2618CB1E00F7C6A8 /* MainCoordinatorAssembly.swift in Sources */,
@@ -891,6 +941,7 @@
 				A7AB30EB2618BB7600F7C6A8 /* ItemDetailLocalizables.swift in Sources */,
 				A7AB307C2618BB5E00F7C6A8 /* AwakingStoryBoardDelegate.swift in Sources */,
 				A7AB306E2618BB5E00F7C6A8 /* BaseCoordinator.swift in Sources */,
+				A7AB31E42618E45700F7C6A8 /* MainCollectionComponent.swift in Sources */,
 				A7AB31532618BE6A00F7C6A8 /* CustomImageLoadingType.swift in Sources */,
 				A7AB30ED2618BB7600F7C6A8 /* VisualContent.swift in Sources */,
 				A7AB30AE2618BB6A00F7C6A8 /* SearchResultUpdater.swift in Sources */,
@@ -904,6 +955,7 @@
 				A7AB31B62618C9B800F7C6A8 /* CaseStudyAssembly.swift in Sources */,
 				A7AB31462618BE6A00F7C6A8 /* TitleInfoViewComponent.swift in Sources */,
 				A7AB31522618BE6A00F7C6A8 /* CustomImageViewComponent.swift in Sources */,
+				A7AB32042618F09300F7C6A8 /* MainComponentHeaderLayout.swift in Sources */,
 				A7AB31442618BE6A00F7C6A8 /* GeneralLoadingViewCell.swift in Sources */,
 				A7AB31672618BF0D00F7C6A8 /* ImageLoadingOptions.swift in Sources */,
 				A7AB30792618BB5E00F7C6A8 /* InteractivePopGestureDelegate.swift in Sources */,
