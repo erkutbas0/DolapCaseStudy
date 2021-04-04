@@ -22,7 +22,9 @@ class MainViewController: BaseViewController<MainViewModel> {
         super.prepareViewControllerConfigurations()
         setupViewConfigurations()
         addMainCollectionComponent()
-        //viewModel.getData()
+        
+        viewModel.getProductData()
+        viewModel.getSocialData()
         
     }
     

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A74387662619D6F7008F317A /* UseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74387652619D6F7008F317A /* UseCaseAssembly.swift */; };
+		A743876B2619D759008F317A /* RepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743876A2619D759008F317A /* RepositoryAssembly.swift */; };
 		A7AB300C2618B3F000F7C6A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB300B2618B3F000F7C6A8 /* AppDelegate.swift */; };
 		A7AB30102618B3F000F7C6A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB300F2618B3F000F7C6A8 /* ViewController.swift */; };
 		A7AB30152618B3F100F7C6A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7AB30142618B3F100F7C6A8 /* Assets.xcassets */; };
@@ -161,6 +163,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A74387652619D6F7008F317A /* UseCaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseAssembly.swift; sourceTree = "<group>"; };
+		A743876A2619D759008F317A /* RepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAssembly.swift; sourceTree = "<group>"; };
 		A7AB30082618B3F000F7C6A8 /* DolapCaseStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DolapCaseStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AB300B2618B3F000F7C6A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7AB300F2618B3F000F7C6A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -731,6 +735,8 @@
 				A7AB31BD2618CB1E00F7C6A8 /* MainCoordinatorAssembly.swift */,
 				A7AB31CF2618D04900F7C6A8 /* SplashCoordinatorAssembly.swift */,
 				A7AB31DA2618D40C00F7C6A8 /* AppCoordinatorAssembly.swift */,
+				A74387652619D6F7008F317A /* UseCaseAssembly.swift */,
+				A743876A2619D759008F317A /* RepositoryAssembly.swift */,
 			);
 			path = DependencyManagers;
 			sourceTree = "<group>";
@@ -1058,6 +1064,7 @@
 				A7AB306F2618BB5E00F7C6A8 /* ErrorResult.swift in Sources */,
 				A7AB323A2618FDCE00F7C6A8 /* RatingInfoComponentData.swift in Sources */,
 				A7AB307B2618BB5E00F7C6A8 /* ApplicationStoryBoards.swift in Sources */,
+				A74387662619D6F7008F317A /* UseCaseAssembly.swift in Sources */,
 				A7AB31F52618E58600F7C6A8 /* TestCell.swift in Sources */,
 				A7AB31FA2618E7A300F7C6A8 /* MainCollectionComponentHeaderView.swift in Sources */,
 				A7AB31D02618D04900F7C6A8 /* SplashCoordinatorAssembly.swift in Sources */,
@@ -1093,6 +1100,7 @@
 				A7AB30AD2618BB6A00F7C6A8 /* PaginationInfo.swift in Sources */,
 				A7AB30AF2618BB6A00F7C6A8 /* MainViewCoordinator.swift in Sources */,
 				A7AB307D2618BB5E00F7C6A8 /* BaseViewModelDelegate.swift in Sources */,
+				A743876B2619D759008F317A /* RepositoryAssembly.swift in Sources */,
 				A7AB31452618BE6A00F7C6A8 /* ItemCollectionCell.swift in Sources */,
 				A7AB30742618BB5E00F7C6A8 /* BaseCollectionViewCell.swift in Sources */,
 				A7AB32202618FAD400F7C6A8 /* BaseDynamicAttributedLabel.swift in Sources */,
