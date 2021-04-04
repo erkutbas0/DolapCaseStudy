@@ -20,7 +20,9 @@ extension Assembler {
              CaseStudyAssembly(),
              MainCoordinatorAssembly(),
              SplashCoordinatorAssembly(),
-             AppCoordinatorAssembly()],
+             AppCoordinatorAssembly(),
+             UseCaseAssembly(),
+             RepositoryAssembly()],
             container: container)
         
         return assembler
