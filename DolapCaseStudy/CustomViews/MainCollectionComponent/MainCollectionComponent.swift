@@ -33,7 +33,7 @@ class MainCollectionComponent: GenericBaseView<MainCollectionComponentData> {
     }
     
     private func registerCells() {
-        collectionView.genericRegisterCell(TestCell.self)
+        collectionView.genericRegisterCell(MainProductDetailCell.self)
         collectionView.register(MainCollectionComponentHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: MainCollectionComponentHeaderView.identifier)
     }
     
@@ -55,23 +55,26 @@ class MainCollectionComponent: GenericBaseView<MainCollectionComponentData> {
 // MARK: - UICollectionViewDelegate, UICollectionViewDataSource -
 extension MainCollectionComponent: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 100
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TestCell.identifier, for: indexPath) as? TestCell else { fatalError() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainProductDetailCell.identifier, for: indexPath) as? MainProductDetailCell else { fatalError() }
         cell.backgroundColor = .yellow
+        
+        cell.setupCell(with: ProductDetailComponentData(productHeaderComponentData: ProductHeaderComponentData(infoLabeldata: ProductInfoLabelData(name: "TAKASI", description: "BOM BOM"))))
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: MainCollectionComponentHeaderView.identifier, for: indexPath)
-        header.backgroundColor = .red
+        header.backgroundColor = .brown
         return header
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width, height: 100)
+        return CGSize(width: UIScreen.main.bounds.width, height: 180)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
