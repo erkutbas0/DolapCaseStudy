@@ -62,7 +62,7 @@ extension MainCollectionComponent: UICollectionViewDelegate, UICollectionViewDat
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainProductDetailCell.identifier, for: indexPath) as? MainProductDetailCell else { fatalError() }
         cell.backgroundColor = .yellow
         
-        cell.setupCell(with: ProductDetailComponentData(productHeaderComponentData: ProductHeaderComponentData(infoLabeldata: ProductInfoLabelData(name: "TAKASI", description: "BOM BOM"))))
+        cell.setupCell(with: ProductDetailComponentData(productHeaderComponentData: ProductHeaderComponentData(infoLabeldata: ProductInfoLabelData(name: "TAKASI", description: "BOM BOM")), ratingInfoComponentData: RatingInfoComponentData(commentCount: CommentCountLabelData(count: 10))))
         
         return cell
     }

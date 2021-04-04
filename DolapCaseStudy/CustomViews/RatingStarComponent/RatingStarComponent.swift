@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StarStackView: UIStackView {
+class RatingStarComponent: UIStackView {
     
     private var ratingButtons = [UIButton]()
     private var data: RatingStarComponentData!
@@ -38,7 +38,7 @@ class StarStackView: UIStackView {
 }
 
 // MARK: - major functions
-extension StarStackView {
+extension RatingStarComponent {
     
     private func setupButtons() {
         // Clear any existing buttons
@@ -155,5 +155,5 @@ extension StarStackView {
 }
 
 fileprivate extension Selector {
-    static let starButtonTapped = #selector(StarStackView.starButtonTapped)
+    static let starButtonTapped = #selector(RatingStarComponent.starButtonTapped)
 }

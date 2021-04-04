@@ -10,9 +10,11 @@ import Foundation
 class ProductDetailComponentData {
     
     private(set) var productHeaderComponentData: ProductHeaderComponentData
+    private(set) var ratingInfoComponentData: RatingInfoComponentData
     
-    init(productHeaderComponentData: ProductHeaderComponentData) {
+    init(productHeaderComponentData: ProductHeaderComponentData, ratingInfoComponentData: RatingInfoComponentData) {
         self.productHeaderComponentData = productHeaderComponentData
+        self.ratingInfoComponentData = ratingInfoComponentData
     }
     
 }

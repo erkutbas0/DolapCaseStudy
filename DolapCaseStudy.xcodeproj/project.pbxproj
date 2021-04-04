@@ -134,6 +134,13 @@
 		A7AB32662619057100F7C6A8 /* MainProductDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB32652619057100F7C6A8 /* MainProductDetailCell.swift */; };
 		A7AB326C261996B500F7C6A8 /* PriceAndCounterComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB326B261996B500F7C6A8 /* PriceAndCounterComponent.swift */; };
 		A7AB3271261996BA00F7C6A8 /* PriceAndCounterComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB3270261996BA00F7C6A8 /* PriceAndCounterComponentData.swift */; };
+		A7AB327726199C0600F7C6A8 /* CommentCountLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB327626199C0600F7C6A8 /* CommentCountLabel.swift */; };
+		A7AB327C26199C0D00F7C6A8 /* CommentCountLabelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB327B26199C0D00F7C6A8 /* CommentCountLabelData.swift */; };
+		A7AB32822619CADE00F7C6A8 /* PriceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB32812619CADE00F7C6A8 /* PriceLabel.swift */; };
+		A7AB32872619CAE900F7C6A8 /* RatingCountLabelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB32862619CAE900F7C6A8 /* RatingCountLabelData.swift */; };
+		A7AB32932619CE5600F7C6A8 /* CountDownComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB32922619CE5600F7C6A8 /* CountDownComponent.swift */; };
+		A7AB32982619CE6600F7C6A8 /* CountDownComponentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB32972619CE6600F7C6A8 /* CountDownComponentData.swift */; };
+		A7AB329D2619CECC00F7C6A8 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB329C2619CECC00F7C6A8 /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -284,6 +291,13 @@
 		A7AB32652619057100F7C6A8 /* MainProductDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProductDetailCell.swift; sourceTree = "<group>"; };
 		A7AB326B261996B500F7C6A8 /* PriceAndCounterComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceAndCounterComponent.swift; sourceTree = "<group>"; };
 		A7AB3270261996BA00F7C6A8 /* PriceAndCounterComponentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceAndCounterComponentData.swift; sourceTree = "<group>"; };
+		A7AB327626199C0600F7C6A8 /* CommentCountLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCountLabel.swift; sourceTree = "<group>"; };
+		A7AB327B26199C0D00F7C6A8 /* CommentCountLabelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCountLabelData.swift; sourceTree = "<group>"; };
+		A7AB32812619CADE00F7C6A8 /* PriceLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceLabel.swift; sourceTree = "<group>"; };
+		A7AB32862619CAE900F7C6A8 /* RatingCountLabelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingCountLabelData.swift; sourceTree = "<group>"; };
+		A7AB32922619CE5600F7C6A8 /* CountDownComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownComponent.swift; sourceTree = "<group>"; };
+		A7AB32972619CE6600F7C6A8 /* CountDownComponentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownComponentData.swift; sourceTree = "<group>"; };
+		A7AB329C2619CECC00F7C6A8 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -599,6 +613,9 @@
 		A7AB31202618BE6A00F7C6A8 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				A7AB32912619CE4300F7C6A8 /* CountDownComponent */,
+				A7AB32802619CACB00F7C6A8 /* PriceLabel */,
+				A7AB327526199BF600F7C6A8 /* CommentCountLabel */,
 				A7AB326A2619969E00F7C6A8 /* PriceAndCounterComponent */,
 				A7AB32572619037800F7C6A8 /* ProductDetailComponent */,
 				A7AB32492619029100F7C6A8 /* ProductHeaderComponent */,
@@ -834,6 +851,34 @@
 			path = PriceAndCounterComponent;
 			sourceTree = "<group>";
 		};
+		A7AB327526199BF600F7C6A8 /* CommentCountLabel */ = {
+			isa = PBXGroup;
+			children = (
+				A7AB327626199C0600F7C6A8 /* CommentCountLabel.swift */,
+				A7AB327B26199C0D00F7C6A8 /* CommentCountLabelData.swift */,
+			);
+			path = CommentCountLabel;
+			sourceTree = "<group>";
+		};
+		A7AB32802619CACB00F7C6A8 /* PriceLabel */ = {
+			isa = PBXGroup;
+			children = (
+				A7AB32812619CADE00F7C6A8 /* PriceLabel.swift */,
+				A7AB32862619CAE900F7C6A8 /* RatingCountLabelData.swift */,
+			);
+			path = PriceLabel;
+			sourceTree = "<group>";
+		};
+		A7AB32912619CE4300F7C6A8 /* CountDownComponent */ = {
+			isa = PBXGroup;
+			children = (
+				A7AB32922619CE5600F7C6A8 /* CountDownComponent.swift */,
+				A7AB32972619CE6600F7C6A8 /* CountDownComponentData.swift */,
+				A7AB329C2619CECC00F7C6A8 /* CounterView.swift */,
+			);
+			path = CountDownComponent;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1018,6 +1063,7 @@
 				A7AB31D02618D04900F7C6A8 /* SplashCoordinatorAssembly.swift in Sources */,
 				A7AB315A2618BE6A00F7C6A8 /* AlertButton.swift in Sources */,
 				A7AB325E2619039B00F7C6A8 /* ProductDetailComponentData.swift in Sources */,
+				A7AB327726199C0600F7C6A8 /* CommentCountLabel.swift in Sources */,
 				A7AB300C2618B3F000F7C6A8 /* AppDelegate.swift in Sources */,
 				A7AB30752618BB5E00F7C6A8 /* GenericCollectionViewCell.swift in Sources */,
 				A7AB30EA2618BB7600F7C6A8 /* AlertViewLocalizables.swift in Sources */,
@@ -1028,12 +1074,15 @@
 				A7AB31F02618E54E00F7C6A8 /* CollectionView+Extensions.swift in Sources */,
 				A7AB30A72618BB6A00F7C6A8 /* SplashScreenCoordinator.swift in Sources */,
 				A7AB31FF2618E95B00F7C6A8 /* BaseCollectionHeaderView.swift in Sources */,
+				A7AB32932619CE5600F7C6A8 /* CountDownComponent.swift in Sources */,
 				A7AB322A2618FD1A00F7C6A8 /* RatingStarComponent.swift in Sources */,
 				A7AB30AA2618BB6A00F7C6A8 /* SplashScreenViewController.swift in Sources */,
+				A7AB32982619CE6600F7C6A8 /* CountDownComponentData.swift in Sources */,
 				A7AB31E92618E47700F7C6A8 /* MainCollectionComponentData.swift in Sources */,
 				A7AB30772618BB5E00F7C6A8 /* GenericTableViewCell.swift in Sources */,
 				A7AB315B2618BE6A00F7C6A8 /* AlertButtonData.swift in Sources */,
 				A7AB31BE2618CB1E00F7C6A8 /* MainCoordinatorAssembly.swift in Sources */,
+				A7AB32822619CADE00F7C6A8 /* PriceLabel.swift in Sources */,
 				A7AB30E92618BB7600F7C6A8 /* FilterViewLocalizables.swift in Sources */,
 				A7AB31DB2618D40C00F7C6A8 /* AppCoordinatorAssembly.swift in Sources */,
 				A7AB32592619038A00F7C6A8 /* ProductDetailComponent.swift in Sources */,
@@ -1057,6 +1106,7 @@
 				A7AB326C261996B500F7C6A8 /* PriceAndCounterComponent.swift in Sources */,
 				A7AB314B2618BE6A00F7C6A8 /* ItemView.swift in Sources */,
 				A7AB31C32618CBB600F7C6A8 /* Assembler+Extension.swift in Sources */,
+				A7AB327C26199C0D00F7C6A8 /* CommentCountLabelData.swift in Sources */,
 				A7AB31472618BE6A00F7C6A8 /* TitleInfoViewComponenData.swift in Sources */,
 				A7AB30EB2618BB7600F7C6A8 /* ItemDetailLocalizables.swift in Sources */,
 				A7AB307C2618BB5E00F7C6A8 /* AwakingStoryBoardDelegate.swift in Sources */,
@@ -1070,6 +1120,7 @@
 				A7AB314C2618BE6A00F7C6A8 /* ItemCollectionComponentData.swift in Sources */,
 				A7AB3253261902BF00F7C6A8 /* ProductHeaderComponentData.swift in Sources */,
 				A7AB314D2618BE6A00F7C6A8 /* CollectionLoadingState.swift in Sources */,
+				A7AB329D2619CECC00F7C6A8 /* CounterView.swift in Sources */,
 				A7AB30782618BB5E00F7C6A8 /* BaseView.swift in Sources */,
 				A7AB318E2618BF3000F7C6A8 /* PopOverControllerManager.swift in Sources */,
 				A7AB318F2618BF3000F7C6A8 /* ImageCacheManager.swift in Sources */,
@@ -1093,6 +1144,7 @@
 				A7AB3271261996BA00F7C6A8 /* PriceAndCounterComponentData.swift in Sources */,
 				A7AB31032618BB7600F7C6A8 /* FontManager.swift in Sources */,
 				A7AB307F2618BB5E00F7C6A8 /* Coordinator.swift in Sources */,
+				A7AB32872619CAE900F7C6A8 /* RatingCountLabelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

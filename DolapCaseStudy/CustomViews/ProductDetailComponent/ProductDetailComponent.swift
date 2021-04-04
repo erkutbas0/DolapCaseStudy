@@ -60,6 +60,7 @@ class ProductDetailComponent: GenericBaseView<ProductDetailComponentData> {
         super.loadDataToView()
         guard let data = returnData() else { return }
         headInfo.setData(data: data.productHeaderComponentData)
+        ratingInfoComponent.setData(data: data.ratingInfoComponentData)
     }
     
 }
