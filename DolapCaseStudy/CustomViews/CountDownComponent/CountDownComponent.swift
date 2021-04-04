@@ -12,7 +12,6 @@ class CountDownComponent: GenericBaseView<CountDownComponentData> {
     lazy var containerView: UIView = {
         let temp = UIView()
         temp.translatesAutoresizingMaskIntoConstraints = false
-        temp.backgroundColor = .brown
         return temp
     }()
     
@@ -43,8 +42,8 @@ class CountDownComponent: GenericBaseView<CountDownComponentData> {
     private lazy var animationData = CounterViewAnimationAttributes(
         animationTime: 20,
         circleAnimationStyle: .decreasing,
-        containerColor: .darkGray,
-        circleAnimationColor: .blue,
+        containerColor: .lightGray,
+        circleAnimationColor: #colorLiteral(red: 0.9960784314, green: 0.7725490196, blue: 0, alpha: 1),
         frameSize: 40,
         startImmediately: true)
     

@@ -83,6 +83,11 @@ class MainViewModel: BaseViewModelDelegate {
         return ProductDetailComponentData(productHeaderComponentData: ProductHeaderComponentData(infoLabeldata: ProductInfoLabelData(name: productResponse?.name, description: productResponse?.productResponseDescription), likeInfoComponentData: LikeInfoComponentData(likeCount: socialResponse?.likeCount ?? 0)), ratingInfoComponentData: RatingInfoComponentData(ratingCount: socialResponse?.commentCounts?.averageRating ?? 0, commentCount: CommentCountLabelData(count: commentCount)), priceAndCounterComponentData: PriceAndCounterComponentData(priceLabelData: PriceLabelData(price: Double(productResponse?.price?.value ?? 0)), countDownData: CountDownComponentData().setResetBlock(by: countDownListener)))
     }
     
+    func getHeaderData() -> GenericDataProtocol? {
+        guard let image = productResponse?.image else { return nil }
+        return MainCollectionComponentHeaderViewData(customImageViewComponentData: CustomImageViewComponentData(imageUrl: image))
+    }
+    
     func listenData(completion: @escaping (CollectionLoadingState) -> Void) -> AnyCancellable {
         return dataSubject.sink(receiveValue: completion)
     }

@@ -10,6 +10,7 @@
 		A74387662619D6F7008F317A /* UseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74387652619D6F7008F317A /* UseCaseAssembly.swift */; };
 		A743876B2619D759008F317A /* RepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743876A2619D759008F317A /* RepositoryAssembly.swift */; };
 		A74387702619F3DF008F317A /* GenericDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743876F2619F3DF008F317A /* GenericDataProtocol.swift */; };
+		A7438779261A1363008F317A /* MainCollectionComponentHeaderViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7438778261A1363008F317A /* MainCollectionComponentHeaderViewData.swift */; };
 		A7AB300C2618B3F000F7C6A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB300B2618B3F000F7C6A8 /* AppDelegate.swift */; };
 		A7AB30102618B3F000F7C6A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AB300F2618B3F000F7C6A8 /* ViewController.swift */; };
 		A7AB30152618B3F100F7C6A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7AB30142618B3F100F7C6A8 /* Assets.xcassets */; };
@@ -167,6 +168,7 @@
 		A74387652619D6F7008F317A /* UseCaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseAssembly.swift; sourceTree = "<group>"; };
 		A743876A2619D759008F317A /* RepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAssembly.swift; sourceTree = "<group>"; };
 		A743876F2619F3DF008F317A /* GenericDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataProtocol.swift; sourceTree = "<group>"; };
+		A7438778261A1363008F317A /* MainCollectionComponentHeaderViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionComponentHeaderViewData.swift; sourceTree = "<group>"; };
 		A7AB30082618B3F000F7C6A8 /* DolapCaseStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DolapCaseStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AB300B2618B3F000F7C6A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7AB300F2618B3F000F7C6A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -769,6 +771,7 @@
 				A7AB31F92618E7A300F7C6A8 /* MainCollectionComponentHeaderView.swift */,
 				A7AB32032618F09300F7C6A8 /* MainComponentHeaderLayout.swift */,
 				A7AB32652619057100F7C6A8 /* MainProductDetailCell.swift */,
+				A7438778261A1363008F317A /* MainCollectionComponentHeaderViewData.swift */,
 			);
 			path = MainCollectionComponent;
 			sourceTree = "<group>";
@@ -1122,6 +1125,7 @@
 				A7AB30EB2618BB7600F7C6A8 /* ItemDetailLocalizables.swift in Sources */,
 				A7AB307C2618BB5E00F7C6A8 /* AwakingStoryBoardDelegate.swift in Sources */,
 				A7AB3245261901FD00F7C6A8 /* LikeInfoComponentData.swift in Sources */,
+				A7438779261A1363008F317A /* MainCollectionComponentHeaderViewData.swift in Sources */,
 				A7AB306E2618BB5E00F7C6A8 /* BaseCoordinator.swift in Sources */,
 				A7AB31E42618E45700F7C6A8 /* MainCollectionComponent.swift in Sources */,
 				A7AB31532618BE6A00F7C6A8 /* CustomImageLoadingType.swift in Sources */,

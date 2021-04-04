@@ -34,7 +34,6 @@ class ProductHeaderComponent: GenericBaseView<ProductHeaderComponentData> {
     lazy var containerView: UIView = {
         let temp = UIView()
         temp.translatesAutoresizingMaskIntoConstraints = false
-        temp.backgroundColor = .red
         return temp
     }()
     

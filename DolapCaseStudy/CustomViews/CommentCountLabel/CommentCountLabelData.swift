@@ -10,8 +10,8 @@ import UIKit
 class CommentCountLabelData {
     
     private(set) var count: Int?
-    private(set) var textColor: Array<UIColor> = [UIColor.black, UIColor.lightGray]
-    private(set) var textFont: Array<UIFont?> = [SourceSansPro.Bold(16).value, SourceSansPro.Regular(14).value]
+    private(set) var textColor: Array<UIColor> = [#colorLiteral(red: 0.9960784314, green: 0.7725490196, blue: 0, alpha: 1)]
+    private(set) var textFont: Array<UIFont?> = [SourceSansPro.SemiBold(16).value]
     private(set) var textAlignment: NSTextAlignment = .left
     
     init(count: Int?) {

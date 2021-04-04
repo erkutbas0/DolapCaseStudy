@@ -12,7 +12,7 @@ class ProductInfoLabelData {
     private(set) var name: String?
     private(set) var description: String?
     private(set) var textColor: Array<UIColor> = [UIColor.black, UIColor.lightGray]
-    private(set) var textFont: Array<UIFont?> = [SourceSansPro.Bold(16).value, SourceSansPro.Regular(14).value]
+    private(set) var textFont: Array<UIFont?> = [SourceSansPro.Bold(18).value, SourceSansPro.Regular(16).value]
     private(set) var textAlignment: NSTextAlignment = .left
     
     init(name: String?, description: String?) {

@@ -79,8 +79,8 @@ extension MainViewController: MainCollectionComponentDelegate {
         return viewModel.getItem(at: index)
     }
     
-    func getHeaderInfo(at index: IndexPath) {
-        
+    func getHeaderInfo(at index: IndexPath) -> GenericDataProtocol? {
+        return viewModel.getHeaderData()
     }
     
 }

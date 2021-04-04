@@ -12,7 +12,6 @@ class LikeInfoComponent: GenericBaseView<LikeInfoComponentData> {
     lazy var containerView: UIView = {
         let temp = UIView()
         temp.translatesAutoresizingMaskIntoConstraints = false
-        temp.backgroundColor = .cyan
         return temp
     }()
     
@@ -39,6 +38,8 @@ class LikeInfoComponent: GenericBaseView<LikeInfoComponentData> {
     lazy var likeCount: UILabel = {
         let temp = UILabel()
         temp.translatesAutoresizingMaskIntoConstraints = false
+        temp.font = SourceSansPro.Regular(16).value
+        temp.textColor = .lightGray
         return temp
     }()
     

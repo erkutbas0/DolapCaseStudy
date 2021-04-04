@@ -12,7 +12,6 @@ class PriceAndCounterComponent: GenericBaseView<PriceAndCounterComponentData> {
     lazy var containerView: UIView = {
         let temp = UIView()
         temp.translatesAutoresizingMaskIntoConstraints = false
-        temp.backgroundColor = .green
         return temp
     }()
     

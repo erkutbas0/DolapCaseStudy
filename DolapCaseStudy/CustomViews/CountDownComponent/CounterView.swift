@@ -61,7 +61,7 @@ class CounterView: UIView {
         let temp = UILabel()
         temp.translatesAutoresizingMaskIntoConstraints = false
         temp.isUserInteractionEnabled = false
-        temp.textColor = #colorLiteral(red: 0.1529411765, green: 0.1803921569, blue: 0.2117647059, alpha: 1)
+        temp.textColor = #colorLiteral(red: 0.9960784314, green: 0.7725490196, blue: 0, alpha: 1)
         return temp
     }()
     
@@ -105,8 +105,8 @@ class CounterView: UIView {
         backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         layer.shadowOffset = .zero
-        layer.shadowOpacity = 0.8;
-        layer.shadowRadius = 15;
+        layer.shadowOpacity = 0.6;
+        layer.shadowRadius = 4;
     }
     
     private func setCounterLabelInitialValue() {

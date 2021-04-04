@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ProductHeaderComponentData {
+class ProductHeaderComponentData: GenericDataProtocol {
     
     private(set) var infoLabeldata: ProductInfoLabelData = ProductInfoLabelData(name: "Takasi", description: "Bom Bom")
     private(set) var likeInfoComponentData: LikeInfoComponentData

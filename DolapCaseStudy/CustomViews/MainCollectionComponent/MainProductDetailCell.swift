@@ -15,6 +15,11 @@ class MainProductDetailCell: BaseCollectionViewCell {
         return temp
     }()
     
+    override func setupView() {
+        super.setupView()
+        contentView.backgroundColor = .white
+    }
+    
     override func addMajorViews() {
         super.addMajorViews()
         addProductDetailComponent()

@@ -10,7 +10,7 @@ import UIKit
 protocol MainCollectionComponentDelegate: AnyObject {
     func getNumberOfItem() -> Int
     func getItem(at index: IndexPath) -> GenericDataProtocol?
-    func getHeaderInfo(at index: IndexPath)
+    func getHeaderInfo(at index: IndexPath) -> GenericDataProtocol?
 }
 
 class MainCollectionComponent: GenericBaseView<MainCollectionComponentData> {
@@ -20,10 +20,10 @@ class MainCollectionComponent: GenericBaseView<MainCollectionComponentData> {
     lazy var collectionView: UICollectionView = {
         let layout = MainComponentHeaderLayout()
         layout.scrollDirection = .vertical
-        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
         let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collection.translatesAutoresizingMaskIntoConstraints = false
-        collection.backgroundColor = .white
+        collection.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         collection.contentInsetAdjustmentBehavior = .never
         collection.dataSource = self
         collection.delegate = self
@@ -85,26 +85,24 @@ extension MainCollectionComponent: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let data = delegate?.getItem(at: indexPath) else { fatalError("Please provide data") }
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainProductDetailCell.identifier, for: indexPath) as? MainProductDetailCell else { fatalError() }
-        cell.backgroundColor = .yellow
         
         cell.setupCell(with: data)
-//        cell.setupCell(with: ProductDetailComponentData(productHeaderComponentData: ProductHeaderComponentData(infoLabeldata: ProductInfoLabelData(name: "TAKASI", description: "BOM BOM")), ratingInfoComponentData: RatingInfoComponentData(commentCount: CommentCountLabelData(count: 10)), priceAndCounterComponentData: PriceAndCounterComponentData(priceLabelData: PriceLabelData(price: 180.0), countDownData: CountDownComponentData())))
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: MainCollectionComponentHeaderView.identifier, for: indexPath)
-        header.backgroundColor = .brown
+        guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: MainCollectionComponentHeaderView.identifier, for: indexPath) as? MainCollectionComponentHeaderView else { fatalError() }
+        header.setup(with: delegate?.getHeaderInfo(at: indexPath))
         return header
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width, height: 180)
+        return CGSize(width: UIScreen.main.bounds.width, height: 160)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width, height: 340)
+        return CGSize(width: UIScreen.main.bounds.width, height: 450)
     }
     
 }

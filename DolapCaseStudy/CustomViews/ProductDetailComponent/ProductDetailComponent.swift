@@ -50,8 +50,8 @@ class ProductDetailComponent: GenericBaseView<GenericDataProtocol> {
         
             mainStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
             mainStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-            mainStackView.topAnchor.constraint(equalTo: topAnchor),
-            mainStackView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            mainStackView.topAnchor.constraint(equalTo: topAnchor, constant: 16),
+            mainStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16),
         
         ])
     }

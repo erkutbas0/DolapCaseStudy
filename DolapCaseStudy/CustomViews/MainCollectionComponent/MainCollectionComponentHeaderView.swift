@@ -9,15 +9,10 @@ import UIKit
 
 class MainCollectionComponentHeaderView: BaseCollectionHeaderView {
     
-    lazy var detailImageView: UIImageView = {
-        let temp = UIImageView()
+    lazy var detailImageView: CustomImageViewComponent = {
+        let temp = CustomImageViewComponent()
         temp.translatesAutoresizingMaskIntoConstraints = false
         temp.contentMode = .scaleAspectFill
-        temp.image = #imageLiteral(resourceName: "sampleImage")
-//        temp.layer.shadowColor = UIColor.gray.cgColor
-//        temp.layer.shadowOffset = .zero
-//        temp.layer.shadowOpacity = 1;
-//        temp.layer.shadowRadius = 2;
         return temp
     }()
     
@@ -38,6 +33,11 @@ class MainCollectionComponentHeaderView: BaseCollectionHeaderView {
             
         ])
         
+    }
+    
+    func setup(with data: GenericDataProtocol?) {
+        guard let data = data as? MainCollectionComponentHeaderViewData else { return }
+        detailImageView.setData(componentData: data.customImageViewComponentData)
     }
     
 }

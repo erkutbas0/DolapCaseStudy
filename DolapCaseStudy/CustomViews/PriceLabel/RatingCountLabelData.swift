@@ -10,8 +10,8 @@ import UIKit
 class PriceLabelData {
     
     private(set) var price: Double
-    private(set) var textColor: Array<UIColor> = [UIColor.black, UIColor.lightGray]
-    private(set) var textFont: Array<UIFont?> = [SourceSansPro.Bold(16).value, SourceSansPro.Regular(14).value]
+    private(set) var textColor: Array<UIColor> = [UIColor.black]
+    private(set) var textFont: Array<UIFont?> = [SourceSansPro.Bold(20).value]
     private(set) var textAlignment: NSTextAlignment = .left
     
     init(price: Double) {

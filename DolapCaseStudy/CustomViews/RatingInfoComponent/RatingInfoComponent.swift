@@ -12,7 +12,6 @@ class RatingInfoComponent: GenericBaseView<RatingInfoComponentData> {
     private lazy var containerView: UIView = {
         let temp = UIView()
         temp.translatesAutoresizingMaskIntoConstraints = false
-        temp.backgroundColor = .blue
         return temp
     }()
     
@@ -30,8 +29,10 @@ class RatingInfoComponent: GenericBaseView<RatingInfoComponentData> {
     private lazy var ratingCountLabel: UILabel = {
         let temp = UILabel()
         temp.translatesAutoresizingMaskIntoConstraints = false
-        temp.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        temp.widthAnchor.constraint(equalToConstant: 24).isActive = true
         temp.text = "0.0"
+        temp.font = SourceSansPro.SemiBold(16).value
+        temp.textColor = #colorLiteral(red: 0.9960784314, green: 0.7725490196, blue: 0, alpha: 1)
         return temp
     }()
     
@@ -59,8 +60,6 @@ class RatingInfoComponent: GenericBaseView<RatingInfoComponentData> {
         
         NSLayoutConstraint.activate([
         
-            containerView.heightAnchor.constraint(equalToConstant: 50),
-            
             containerView.leadingAnchor.constraint(equalTo: leadingAnchor),
             containerView.trailingAnchor.constraint(equalTo: trailingAnchor),
             containerView.topAnchor.constraint(equalTo: topAnchor),

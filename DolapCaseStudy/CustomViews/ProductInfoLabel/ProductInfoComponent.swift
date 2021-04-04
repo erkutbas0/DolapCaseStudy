@@ -18,7 +18,7 @@ class ProductInfoLabel: BaseDynamicAttributedLabel<ProductInfoLabelData> {
         paragraphStyle.alignment = data.textAlignment
         
         var value =  NSMutableAttributedString(string: data.name ?? "", attributes: [.font : data.textFont[0], .foregroundColor: data.textColor[0], .paragraphStyle: paragraphStyle])
-        value.append(NSMutableAttributedString(string: " \(data.description ?? "")" , attributes: [.font : data.textFont[1], .foregroundColor: data.textColor[1], .paragraphStyle: paragraphStyle]))
+        value.append(NSMutableAttributedString(string: "  \(data.description ?? "")" , attributes: [.font : data.textFont[1], .foregroundColor: data.textColor[1], .paragraphStyle: paragraphStyle]))
 
         self.attributedText = value
         
