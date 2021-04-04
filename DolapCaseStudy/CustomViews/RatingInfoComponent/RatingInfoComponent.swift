@@ -31,7 +31,7 @@ class RatingInfoComponent: GenericBaseView<RatingInfoComponentData> {
         let temp = UILabel()
         temp.translatesAutoresizingMaskIntoConstraints = false
         temp.widthAnchor.constraint(equalToConstant: 30).isActive = true
-        temp.text = "4.0"
+        temp.text = "0.0"
         return temp
     }()
     
@@ -78,6 +78,8 @@ class RatingInfoComponent: GenericBaseView<RatingInfoComponentData> {
         super.loadDataToView()
         guard let data = returnData() else { return }
         commentCount.setLabelData(data: data.commentCount)
+        ratingCountLabel.text = "\(Double(data.ratingCount))"
+        ratingView.setStarRatingExternally(index: data.ratingCount)
     }
     
 }

@@ -9,9 +9,11 @@ import Foundation
 
 class RatingInfoComponentData {
     
+    private(set) var ratingCount: Int
     private(set) var commentCount: CommentCountLabelData = CommentCountLabelData(count: 10)
     
-    init(commentCount: CommentCountLabelData) {
+    init(ratingCount: Int, commentCount: CommentCountLabelData) {
+        self.ratingCount = ratingCount
         self.commentCount = commentCount
     }
     

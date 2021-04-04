@@ -33,7 +33,7 @@ class MainProductDetailCell: BaseCollectionViewCell {
         ])
     }
 
-    func setupCell(with data: ProductDetailComponentData?) {
+    func setupCell(with data: GenericDataProtocol?) {
         productDetailComponent.setData(data: data)
     }
     

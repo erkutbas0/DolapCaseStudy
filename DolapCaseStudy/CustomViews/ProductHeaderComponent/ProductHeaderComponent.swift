@@ -66,6 +66,7 @@ class ProductHeaderComponent: GenericBaseView<ProductHeaderComponentData> {
         super.loadDataToView()
         guard let data = returnData() else { return }
         info.setLabelData(data: data.infoLabeldata)
+        like.setData(data: data.likeInfoComponentData)
     }
     
 }

@@ -9,4 +9,10 @@ import Foundation
 
 class LikeInfoComponentData {
     
+    private(set) var likeCount: Int
+    
+    init(likeCount: Int) {
+        self.likeCount = likeCount
+    }
+    
 }

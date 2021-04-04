@@ -7,7 +7,15 @@
 
 import UIKit
 
+protocol MainCollectionComponentDelegate: AnyObject {
+    func getNumberOfItem() -> Int
+    func getItem(at index: IndexPath) -> GenericDataProtocol?
+    func getHeaderInfo(at index: IndexPath)
+}
+
 class MainCollectionComponent: GenericBaseView<MainCollectionComponentData> {
+    
+    private weak var delegate: MainCollectionComponentDelegate?
  
     lazy var collectionView: UICollectionView = {
         let layout = MainComponentHeaderLayout()
@@ -50,19 +58,37 @@ class MainCollectionComponent: GenericBaseView<MainCollectionComponentData> {
         ])
     }
     
+    func setDelegate(_ delegate: MainCollectionComponentDelegate) {
+        self.delegate = delegate
+    }
+    
+    func reloadComponent(with animate: Bool) {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            if animate {
+                UIView.transition(with: self, duration: 0.3, options: .transitionCrossDissolve) {
+                    self.collectionView.reloadData()
+                }
+            }
+            self.collectionView.reloadData()
+        }
+    }
+    
 }
 
 // MARK: - UICollectionViewDelegate, UICollectionViewDataSource -
 extension MainCollectionComponent: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return delegate?.getNumberOfItem() ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let data = delegate?.getItem(at: indexPath) else { fatalError("Please provide data") }
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainProductDetailCell.identifier, for: indexPath) as? MainProductDetailCell else { fatalError() }
         cell.backgroundColor = .yellow
         
-        cell.setupCell(with: ProductDetailComponentData(productHeaderComponentData: ProductHeaderComponentData(infoLabeldata: ProductInfoLabelData(name: "TAKASI", description: "BOM BOM")), ratingInfoComponentData: RatingInfoComponentData(commentCount: CommentCountLabelData(count: 10))))
+        cell.setupCell(with: data)
+//        cell.setupCell(with: ProductDetailComponentData(productHeaderComponentData: ProductHeaderComponentData(infoLabeldata: ProductInfoLabelData(name: "TAKASI", description: "BOM BOM")), ratingInfoComponentData: RatingInfoComponentData(commentCount: CommentCountLabelData(count: 10)), priceAndCounterComponentData: PriceAndCounterComponentData(priceLabelData: PriceLabelData(price: 180.0), countDownData: CountDownComponentData())))
         
         return cell
     }

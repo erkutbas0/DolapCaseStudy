@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProductDetailComponent: GenericBaseView<ProductDetailComponentData> {
+class ProductDetailComponent: GenericBaseView<GenericDataProtocol> {
     
     private lazy var mainStackView: UIStackView = {
         let temp = UIStackView(arrangedSubviews: [headInfo, ratingInfoComponent, priceAndCounterComponent])
@@ -48,8 +48,8 @@ class ProductDetailComponent: GenericBaseView<ProductDetailComponentData> {
         
         NSLayoutConstraint.activate([
         
-            mainStackView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            mainStackView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            mainStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            mainStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
             mainStackView.topAnchor.constraint(equalTo: topAnchor),
             mainStackView.bottomAnchor.constraint(equalTo: bottomAnchor),
         
@@ -58,9 +58,10 @@ class ProductDetailComponent: GenericBaseView<ProductDetailComponentData> {
     
     override func loadDataToView() {
         super.loadDataToView()
-        guard let data = returnData() else { return }
+        guard let data = returnData() as? ProductDetailComponentData else { return }
         headInfo.setData(data: data.productHeaderComponentData)
         ratingInfoComponent.setData(data: data.ratingInfoComponentData)
+        priceAndCounterComponent.setData(data: data.priceAndCounterComponentData)
     }
     
 }

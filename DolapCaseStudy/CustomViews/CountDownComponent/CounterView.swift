@@ -184,9 +184,7 @@ class CounterView: UIView {
     }
     
     private func returnCircleViewAnimationAttributes() -> CounterViewAnimationAttributes {
-        guard let animationAttributes = animationAttributes else { return CounterViewAnimationAttributes(animationTime: 10, circleAnimationStyle: .decreasing, startImmediately: true)
-            
-        }
+        guard let animationAttributes = animationAttributes else { return CounterViewAnimationAttributes(animationTime: 10, circleAnimationStyle: .decreasing, startImmediately: true) }
         return animationAttributes
     }
     

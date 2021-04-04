@@ -65,6 +65,8 @@ class PriceAndCounterComponent: GenericBaseView<PriceAndCounterComponentData> {
     override func loadDataToView() {
         super.loadDataToView()
         guard let data = returnData() else { return }
+        priceInfo.setLabelData(data: data.priceLabelData)
+        counterComponent.setData(data: data.countDownData)
     }
     
 }

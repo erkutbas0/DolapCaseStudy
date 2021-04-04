@@ -9,4 +9,11 @@ import Foundation
 
 class CountDownComponentData {
     
+    private(set) var resetBlock: VoidOperation?
+    
+    func setResetBlock(by value: VoidOperation?) -> Self {
+        self.resetBlock = value
+        return self
+    }
+    
 }
